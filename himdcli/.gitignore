@@ -1,0 +1,6 @@
+Makefile
+Makefile.Release
+Makefile.Debug
+himdcli
+debug
+release

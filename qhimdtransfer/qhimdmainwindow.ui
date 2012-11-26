@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHiMDMainWindowClass</class>
+ <widget class="QMainWindow" name="QHiMDMainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QHiMDTransfer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/qhimdtransfer_24.png</normaloff>:/icons/qhimdtransfer_24.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,1">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,1">
+        <item>
+         <widget class="QLabel" name="himd_mountpoint">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>HiMD path</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="himdpath">
+          <property name="text">
+           <string>(disconnected)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="himd_devices"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTreeView" name="TrackList">
+        <property name="editTriggers">
+         <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::MultiSelection</enum>
+        </property>
+        <property name="indentation">
+         <number>5</number>
+        </property>
+        <attribute name="headerHighlightSections">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="upload_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/arrow_upload.png</normaloff>:/icons/arrow_upload.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="download_button">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/arrow_download.png</normaloff>:/icons/arrow_download.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+        <item>
+         <widget class="QLabel" name="updir_text">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>local directory</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="updir">
+          <property name="text">
+           <string notr="true">/tmp</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTreeView" name="localScan">
+        <attribute name="headerVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="headerCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Action">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Connect"/>
+    <addaction name="separator"/>
+    <addaction name="action_Download"/>
+    <addaction name="action_Upload"/>
+    <addaction name="separator"/>
+    <addaction name="action_Delete"/>
+    <addaction name="action_Rename"/>
+    <addaction name="separator"/>
+    <addaction name="action_Format"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;?</string>
+    </property>
+    <addaction name="action_Help"/>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_Action"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Connect"/>
+   <addaction name="separator"/>
+   <addaction name="action_Download"/>
+   <addaction name="action_Upload"/>
+   <addaction name="separator"/>
+   <addaction name="action_Rename"/>
+   <addaction name="action_Delete"/>
+   <addaction name="action_Format"/>
+   <addaction name="separator"/>
+   <addaction name="action_Help"/>
+   <addaction name="action_Quit"/>
+  </widget>
+  <action name="action_Download">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/download_to_md.png</normaloff>:/icons/download_to_md.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Download tracks onto MD</string>
+   </property>
+  </action>
+  <action name="action_Upload">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/upload_from_md.png</normaloff>:/icons/upload_from_md.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Upload tracks from MD</string>
+   </property>
+  </action>
+  <action name="action_Rename">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/rename.png</normaloff>:/icons/rename.png</iconset>
+   </property>
+   <property name="text">
+    <string>Re&amp;name</string>
+   </property>
+   <property name="toolTip">
+    <string>Rename selected</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/delete.png</normaloff>:/icons/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>D&amp;elete selected</string>
+   </property>
+  </action>
+  <action name="action_Help">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/help.png</normaloff>:/icons/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/info.png</normaloff>:/icons/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="action_Format">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/format.png</normaloff>:/icons/format.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Format MD</string>
+   </property>
+   <property name="toolTip">
+    <string>Format MD</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/quit.png</normaloff>:/icons/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_Connect">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/connect.png</normaloff>:/icons/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Connect</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>on_trigger_Format()</slot>
+  <slot>on_trigger_Download()</slot>
+  <slot>on_trigger_Quit()</slot>
+  <slot>on_trigger_Upload()</slot>
+  <slot>on_trigger_Delete()</slot>
+  <slot>on_trigger_Rename()</slot>
+  <slot>on_trigger_AddGroup()</slot>
+  <slot>on_trigger_Connect()</slot>
+ </slots>
+</ui>

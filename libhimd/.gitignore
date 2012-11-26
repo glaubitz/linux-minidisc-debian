@@ -1,0 +1,6 @@
+*.prl
+*.a
+Makefile
+Makefile.Release
+Makefile.Debug
+himdtest
