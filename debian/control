@@ -1,0 +1,61 @@
+Source: linux-minidisc
+Section: sound
+Priority: extra
+Maintainer: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
+Build-Depends: debhelper (>= 9.0.0), libqt4-dev, libglib2.0-dev, libmad0-dev, libgcrypt-dev, libsox-dev, libusb-1.0-0-dev, libid3tag0-dev, libtag1-dev
+Standards-Version: 3.9.3
+Homepage: https://wiki.physik.fu-berlin.de/linux-minidisc
+Vcs-Git: git://github.com/glaubitz/linux-minidisc-debian.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/linux-minidisc.git;a=summary
+
+Package: minidisc-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Command line utilities for MiniDisc access
+ This package contains several utilities which allow
+ to access NetMD and HiMD devices through a command line
+ interface. The utilities allow to transfer tracks to
+ and from NetMD and HiMD devices as well as erase
+ tracks, display tracks and renaming tracks among other
+ functions supported by libnetmd and libhimd libraries.
+ .
+
+# Package: libhimd0
+# Architecture: any
+# Depends: ${shlibs:Depends}, ${misc:Depends}
+# Description: <insert up to 60 chars description>
+#  <insert long description, indented with spaces>
+
+# Package: libhimd-dev
+# Architecture: any
+# Depends: ${shlibs:Depends}, ${misc:Depends}
+# Description: <insert up to 60 chars description>
+#  <insert long description, indented with spaces>
+
+# Package: libnetmd0
+# Architecture: any
+# Depends: ${shlibs:Depends}, ${misc:Depends}
+# Description: <insert up to 60 chars description>
+#  <insert long description, indented with spaces>
+
+# Package: libnetmd-dev
+# Architecture: any
+# Depends: ${shlibs:Depends}, ${misc:Depends}
+# Description: <insert up to 60 chars description>
+#  <insert long description, indented with spaces>
+
+Package: qhimdtransfer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Transfer software for HiMD Walkman
+ qhimdtransfer is a simple graphical user interface application
+ for accessing MiniDisc devices. Currently, qhimdtransfer
+ supports HiMD devices only through libhimd. Support for
+ NetMD devices through libnetmd is being planned and
+ implemented by upstream for the next releases.
+ .
+
+#Package: linux-minidisc-doc
+#Architecture: all
+#Description: Documentation for linux-minidisc
+# <insert long description, indented with spaces>

@@ -1,0 +1,27 @@
+linux-minidisc for Debian
+-------------------------
+
+The linux-minidisc suite contains several independent
+packages intended for accessing NetMD and HiMD MiniDisc
+devices.
+
+The package minidisc-utils currently contains the utilities
+himdcli and netmdcli which allow to transfer tracks to and
+from HiMD and NetMD devices respectively. Both himdcli
+and netmdcli come with a manpage.
+
+qhimdtransfer is a simple transfer application written in
+Qt which allows one to transfer tracks from and to HiMD devices.
+NetMD devices are currently not yet supported by qhimdtransfer,
+users have to resort to the package minidisc-utilities. Also,
+qhimdtransfer currently supports uploads (transfers from
+the device to the PC) only, but the patches for download
+are currently in review and will be integrated into the
+1.0.0 release.
+
+For support and further information, please visit the
+linux-minidisc wiki at:
+
+> https://wiki.physik.fu-berlin.de/linux-minidisc
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Thu, 22 Nov 2012 23:40:00 +0100

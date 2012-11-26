@@ -1,0 +1,15 @@
+linux-minidisc for Debian
+-------------------------
+
+This source package currently builds two packages, qhimdtransfer
+and minidisc-utils. Both the GUI application qhimdtransfer
+and the command line utitilies from the minidisc-utils are
+statically linked against the libnetmd and libhimd libraries.
+
+We're planning to repackage everything to make the libraries
+shared in order to create the libraries as separately installable
+packages. The debian directory of the source already contains
+some templates for the library packages and for an upcoming
+documentation package.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Thu, 26 Nov 2012 17:08:28 +0100

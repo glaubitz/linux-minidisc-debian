@@ -1,0 +1,2 @@
+version=3
+https://github.com/glaubitz/linux-minidisc/tags .*/tarball/v(\d[\d\.]+)

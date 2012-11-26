@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=QHiMDTransfer
+GenericName=Transfer software for Sony HiMD Walkman
+Comment=Transfer software for Sony HiMD Walkman
+
+Icon=qhimdtransfer_32
+Exec=qhimdtransfer
+#Icon=qtcreator_logo_32
+Type=Application
+Terminal=false
+Categories=Qt;AudioVideo;Audio
