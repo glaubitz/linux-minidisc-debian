@@ -1,10 +1,10 @@
 linux-minidisc (0.9.6-1) unstable; urgency=low
 
   * New upstream release.
-	- fixes FTBFS on Debian GNU/kFreeBSD
-	- initial work for MP3 downloads in qhimdtransfer
-	- use a signal handler to process input for the directory
-	  browser; this allows selecting tracks with the keybaord
+    - fixes FTBFS on Debian GNU/kFreeBSD
+    - initial work for MP3 downloads in qhimdtransfer
+    - use a signal handler to process input for the directory
+      browser; this allows selecting tracks with the keybaord
   * Fix watch line in Debian watch file. Thanks, Bart Martens.
   * Fix build dependency for libgcrypt11-dev.
 
