@@ -1,3 +1,10 @@
+linux-minidisc (0.9.7-2) unstable; urgency=low
+
+  * Add missing statement in qhimdtransfer.install
+    for translations.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Tue, 30 Apr 2013 00:37:49 +0200
+
 linux-minidisc (0.9.7-1) unstable; urgency=low
 
   * New upstream release.
