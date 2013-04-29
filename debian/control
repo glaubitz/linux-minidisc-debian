@@ -3,10 +3,10 @@ Section: sound
 Priority: extra
 Maintainer: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
 Build-Depends: debhelper (>= 9.0.0), libqt4-dev, libglib2.0-dev, libmad0-dev, libgcrypt11-dev, libsox-dev, libusb-1.0-0-dev, libid3tag0-dev, libtag1-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: https://wiki.physik.fu-berlin.de/linux-minidisc
 Vcs-Git: git://github.com/glaubitz/linux-minidisc-debian.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/linux-minidisc.git;a=summary
+Vcs-Browser: https://github.com/glaubitz/linux-minidisc
 
 Package: minidisc-utils
 Architecture: any
