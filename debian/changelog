@@ -1,3 +1,11 @@
+linux-minidisc (0.9.8-1) unstable; urgency=low
+
+  * New upstream release.
+    - fix renaming of tracks on certain NetMD devices
+    - fix building of qhimdtransfer without libmad
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 03 May 2013 05:14:26 +0200
+
 linux-minidisc (0.9.7-2) unstable; urgency=low
 
   * Add missing statement in qhimdtransfer.install
