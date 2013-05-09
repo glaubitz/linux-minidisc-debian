@@ -1,3 +1,10 @@
+linux-minidisc (0.9.9-1) unstable; urgency=low
+
+  * New upstream release.
+    - fix renaming of discs on certain NetMD devices
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 10 May 2013 00:45:57 +0200
+
 linux-minidisc (0.9.8-1) unstable; urgency=low
 
   * New upstream release.
