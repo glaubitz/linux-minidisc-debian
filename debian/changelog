@@ -1,3 +1,11 @@
+linux-minidisc (0.9.13-1) unstable; urgency=medium
+
+   * New upstream release.
+     - fix include directives for Qt
+     - remove deprecated files from source
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Mon, 06 Jan 2014 11:11:47 +0100
+
 linux-minidisc (0.9.12-1) unstable; urgency=medium
 
   * New upstream release.
