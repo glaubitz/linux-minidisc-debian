@@ -1,3 +1,21 @@
+linux-minidisc (0.9.14-1) unstable; urgency=medium
+
+  * New upstream release.
+    - add support for continous integration
+    - restructure build system
+    - replace sox dependency with custom WAV file writer
+    - improve parallel builds
+    - various fixes
+  * debian/changelog:
+    - fix indentation of 0.9.13-1 entry
+  * debian/control:
+    - drop deprecated build dependency on libsox-dev
+  * debian/patches/0001-use-builddate-from-changelog.patch:
+    - set BUILDDATE from last entry in debian/changelog
+      to make the build reproducible (Closes: #786568).
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 09 Dec 2016 12:12:37 +0100
+
 linux-minidisc (0.9.13-1) unstable; urgency=medium
 
   * New upstream release.
