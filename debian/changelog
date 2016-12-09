@@ -1,3 +1,10 @@
+linux-minidisc (0.9.14-2) unstable; urgency=medium
+
+  * debian/patches/0002-fix-big-endian64-builds.patch:
+    - Add patch to fix FTFBS on big-endian 64-bit
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 09 Dec 2016 14:38:42 +0100
+
 linux-minidisc (0.9.14-1) unstable; urgency=medium
 
   * New upstream release.
