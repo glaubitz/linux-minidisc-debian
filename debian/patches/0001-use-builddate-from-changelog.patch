@@ -1,0 +1,16 @@
+Description: Use debian/changelog to extract build date
+ To make qhimdtransfer build in a reproducible manner, we now use
+ the date of the latest entry in debian/changelog as the build date.
+Author: Jérémy Bobbio <lunar@debian.org>
+
+--- linux-minidisc-0.9.14.orig/qhimdtransfer/qhimdtransfer.pro
++++ linux-minidisc-0.9.14/qhimdtransfer/qhimdtransfer.pro
+@@ -24,7 +24,7 @@ DEFINES += VER=\"$${VERSTR}\" # create a
+ equals(QMAKE_HOST.os,Windows) {
+     BUILDDATE = $$system(date /T)
+ } else {
+-    BUILDDATE = $$system(date +%a\\ %m\\/%d\\/%Y)
++    BUILDDATE = $$system(dpkg-parsechangelog -l ../debian/changelog -S Date | LC_ALL=C date -u -f - +%a\\ %m\\/%d\\/%Y)
+ }
+ BDATESTR = '\\"$${BUILDDATE}\\"'  # place quotes around the build date string
+ DEFINES += BDATE=\"$${BDATESTR}\" # create a BDATE macro containing the build date string
