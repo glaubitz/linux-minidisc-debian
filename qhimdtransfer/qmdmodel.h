@@ -1,26 +1,22 @@
 #ifndef QMDMODEL_H
 #define QMDMODEL_H
 
-#include <QtCore/QAbstractListModel>
+#include <QAbstractListModel>
 
-#include <QtCore/QList>
-#include <QtCore/QStringList>
+#include <QList>
+#include <QStringList>
 #include <QFileSystemModel>
 #include <qmddevice.h>
 
 class QMDTracksModel : public QAbstractListModel {
     Q_OBJECT
 
-    QMDDevice * dev;
 public:
-    QMDTracksModel() : dev(NULL) {}
-    /* QAbstractListModel stuff */
-    virtual QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const {return QVariant();}
-    virtual QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const {return QVariant();}
-    virtual int rowCount(const QModelIndex & parent = QModelIndex() ) const {return 0;}
-    virtual int columnCount(const QModelIndex & parent = QModelIndex() ) const {return 0;}
+    QMDTracksModel() {}
+    /* Make this method from QAbstractListModel public */
+    virtual int columnCount(const QModelIndex & parent = QModelIndex() ) const = 0;
     /* dummy data for unknown devices */
-    virtual QString open(QMDDevice *device = NULL) {return tr("no known device type specified");}
+    virtual QString open(QMDDevice *device = NULL) = 0;
     virtual bool is_open() {return false;}
     virtual void close() {}
 };
