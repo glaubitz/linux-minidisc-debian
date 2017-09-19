@@ -1,3 +1,19 @@
+linux-minidisc (0.9.15-1) unstable; urgency=medium
+
+  * New upstream release.
+   - add build support for Qt5 (Closes: #875037)
+   - fix build on 64-bit big-endian systems
+   - add Travis configuration for continuous integration
+   - update credits in about dialog of QHiMDTransfer
+   - remove glib dependency for libnetmd, netmdcli and QHiMDTransfer
+   - remove dependency on sox
+  * Drop patch 0002-fix-big-endian64-builds.patch, merged upstream.
+  * Update build dependencies for Qt5 in debian/control.
+  * Set QT_SELECT to "qt5" in debian/rules.
+  * Update standards version to 4.1.0 in debian/control.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Tue, 19 Sep 2017 20:15:58 +0200
+
 linux-minidisc (0.9.14-2) unstable; urgency=medium
 
   * debian/patches/0002-fix-big-endian64-builds.patch:
