@@ -24,7 +24,7 @@ DEFINES += VER=\"$${VERSTR}\" # create a VER macro containing the version string
 equals(QMAKE_HOST.os,Windows) {
     BUILDDATE = $$system(date /T)
 } else {
-    BUILDDATE = $$system(dpkg-parsechangelog -l ../debian/changelog -S Date | LC_ALL=C date -u -f - +%a\\ %m\\/%d\\/%Y)
+    BUILDDATE = $$system(date +%a\\ %m\\/%d\\/%Y)
 }
 BDATESTR = '\\"$${BUILDDATE}\\"'  # place quotes around the build date string
 DEFINES += BDATE=\"$${BDATESTR}\" # create a BDATE macro containing the build date string
@@ -106,7 +106,6 @@ unix {
 
 include(../libhimd/use_libhimd.pri)
 include(../libnetmd/use_libnetmd.prl)
-include(../build/libglib.pri)
 include(../build/libusb.pri)
 include(../build/libtaglib.pri)
 include(../build/installunix.pri)
