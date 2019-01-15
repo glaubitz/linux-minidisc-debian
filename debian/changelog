@@ -1,3 +1,20 @@
+linux-minidisc (0.9.16-1) unstable; urgency=medium
+
+  * New upstream release.
+    - add missing dependency on libz in qhimdtransfer qmake project file
+    - implement very rudimentary MP3 download support in qhimdtransfer
+    - move himd_writemp3() from himdcli to libhimd
+    - free allocted strings in himd_write_tifdata()
+    - fix crash when _trkidxXX.hma does not exist
+    - use regular expressions in scanfortif()
+    - scan for the highest numbered track index file in scanfortif()
+    - use better names for argc/min_argc in netmdcli
+    - check arguments to avoid out-of-bounds access in netmdcli
+  * Bump debhelper version to 12, in d/compat and d/control.
+  * Update standards version to 4.2.1 in debian/control.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 16 Jan 2019 11:08:26 +0100
+
 linux-minidisc (0.9.15-1) unstable; urgency=medium
 
   * New upstream release.
