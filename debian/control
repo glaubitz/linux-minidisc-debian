@@ -12,9 +12,9 @@ Package: minidisc-utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Command line utilities for MiniDisc access
- This package contains several utilities which allow
+ This package contains several utilities which allow one
  to access NetMD and HiMD devices through a command line
- interface. The utilities allow to transfer tracks to
+ interface. The utilities allow one to transfer tracks to
  and from NetMD and HiMD devices as well as erase
  tracks, display tracks and renaming tracks among other
  functions supported by libnetmd and libhimd libraries.
