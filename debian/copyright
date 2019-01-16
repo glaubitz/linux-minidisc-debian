@@ -3,11 +3,11 @@ Upstream-Name: linux-minidisc
 Source: https://wiki.physik.fu-berlin.de/linux-minidisc/
 
 Files: *
-Copyright: 2009-2012 linux-minidisc project
+Copyright: 2009-2019 linux-minidisc project
 License: GPL-2
 
 Files: debian/*
-Copyright: 2012-2012 John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
+Copyright: 2012-2019 John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
 License: GPL-2
 
 License: GPL-2
@@ -31,11 +31,11 @@ License: GPL-2
 
 Files: libnetmd/*
 Copyright: 2003-2004 libnetmd project
-           2009-2012 linux-minidisc project
+           2009-2019 linux-minidisc project
 License: LGPL-2.1
 
 Files: libhimd/*
-Copyright: 2009-2012 linux-minidisc project
+Copyright: 2009-2019 linux-minidisc project
 License: LGPL-2.1
 
 License: LGPL-2.1
