@@ -15,6 +15,13 @@ linux-minidisc (0.9.16-1) unstable; urgency=medium
 
  -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 16 Jan 2019 11:08:26 +0100
 
+linux-minidisc (0.9.15-2) unstable; urgency=medium
+
+  * Switch build dependency from libgcrypt11-dev to
+    libgcrypt20-dev in debian/control (Closes: #864122).
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Sat, 27 Oct 2018 23:24:29 +0200
+
 linux-minidisc (0.9.15-1) unstable; urgency=medium
 
   * New upstream release.
