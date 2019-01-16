@@ -6,7 +6,7 @@ packages intended for accessing NetMD and HiMD MiniDisc
 devices.
 
 The package minidisc-utils currently contains the utilities
-himdcli and netmdcli which allow to transfer tracks to and
+himdcli and netmdcli which allow one to transfer tracks to and
 from HiMD and NetMD devices respectively. Both himdcli
 and netmdcli come with a manpage.
 
