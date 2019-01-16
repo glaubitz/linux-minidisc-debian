@@ -18,4 +18,4 @@ export DH_OPTIONS
 export QT_SELECT=qt5
 
 %:
-	dh $@ 
+	dh $@
