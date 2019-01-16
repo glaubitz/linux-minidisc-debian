@@ -1,6 +1,6 @@
 Source: linux-minidisc
 Section: sound
-Priority: extra
+Priority: optional
 Maintainer: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
 Build-Depends: debhelper (>= 12), qtbase5-dev, qttools5-dev-tools, libglib2.0-dev, libmad0-dev, libgcrypt11-dev, libusb-1.0-0-dev, libid3tag0-dev, libtag1-dev
 Standards-Version: 4.2.1
