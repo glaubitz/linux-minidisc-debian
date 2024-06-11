@@ -1,3 +1,17 @@
+linux-minidisc (0.9.16-3) unstable; urgency=medium
+
+  * Add pkgconf to Build-Depends in debian/control
+  * Add systemd-dev to Build-Depends in debian/control
+  * Run pkg-config to obtain path for udev base directory in debian/rules
+  * Use obtained udev base directory to install rules files
+    in debian/minidisc-utils.install (Closes: #1057827)
+  * Update debhelper version to 13 and switch to debhelper-compat
+  * Use proper debian/tmp source paths in debian/minidisc-utils.install
+  * Use proper debian/tmp source paths in debian/qhimdtransfer.install
+  * Run wrap-and-sort to clean up files in debian directory
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Tue, 11 Jun 2024 08:35:13 +0200
+
 linux-minidisc (0.9.16-2) unstable; urgency=medium
 
   * Switch priority from extra to optional in debian/control.
