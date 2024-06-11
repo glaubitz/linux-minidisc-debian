@@ -13,6 +13,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# Run pkg-config to obtain path for udev base directory
+export deb_udevdir = $(shell pkg-config --variable=udevdir udev)
+
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 export QT_SELECT=qt5
