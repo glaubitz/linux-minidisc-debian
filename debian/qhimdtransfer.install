@@ -8,5 +8,5 @@ qhimdtransfer/icons/qhimdtransfer_96.png /usr/share/pixmaps
 qhimdtransfer/icons/qhimdtransfer_128.png /usr/share/pixmaps
 qhimdtransfer/icons/qhimdtransfer_256.png /usr/share/pixmaps
 qhimdtransfer/icons/qhimdtransfer_512.png /usr/share/pixmaps
-qhimdtransfer/qhimdtransfer /usr/bin
-qhimdtransfer/qhimdtransfer*qm /usr/share/qhimdtransfer/translations/
+debian/tmp/usr/bin/qhimdtransfer
+debian/tmp/usr/share/qhimdtransfer/translations/*.qm
