@@ -1,3 +1,3 @@
-himdcli/himdcli /usr/bin
-netmdcli/netmdcli /usr/bin
+debian/tmp/usr/bin/himdcli
+debian/tmp/usr/bin/netmdcli
 netmd/etc/netmd.rules ${env:deb_udevdir}/rules.d/
