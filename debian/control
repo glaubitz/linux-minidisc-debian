@@ -2,7 +2,17 @@ Source: linux-minidisc
 Section: sound
 Priority: optional
 Maintainer: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
-Build-Depends: debhelper-compat (= 13), qtbase5-dev, qttools5-dev-tools, libglib2.0-dev, libmad0-dev, libgcrypt20-dev, libusb-1.0-0-dev, libid3tag0-dev, libtag1-dev, pkgconf, systemd-dev
+Build-Depends: debhelper-compat (= 13),
+               libgcrypt20-dev,
+               libglib2.0-dev,
+               libid3tag0-dev,
+               libmad0-dev,
+               libtag1-dev,
+               libusb-1.0-0-dev,
+               pkgconf,
+               qtbase5-dev,
+               qttools5-dev-tools,
+               systemd-dev
 Standards-Version: 4.2.1
 Homepage: https://wiki.physik.fu-berlin.de/linux-minidisc
 Vcs-Git: git://github.com/glaubitz/linux-minidisc-debian.git
@@ -10,7 +20,7 @@ Vcs-Browser: https://github.com/glaubitz/linux-minidisc
 
 Package: minidisc-utils
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Command line utilities for MiniDisc access
  This package contains several utilities which allow one
  to access NetMD and HiMD devices through a command line
@@ -46,7 +56,7 @@ Description: Command line utilities for MiniDisc access
 
 Package: qhimdtransfer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Transfer software for HiMD Walkman
  qhimdtransfer is a simple graphical user interface application
  for accessing MiniDisc devices. Currently, qhimdtransfer

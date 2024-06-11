@@ -1,12 +1,12 @@
 debian/qhimdtransfer.desktop /usr/share/applications
-qhimdtransfer/icons/qhimdtransfer_16.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_24.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_32.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_48.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_64.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_96.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_128.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_256.png /usr/share/pixmaps
-qhimdtransfer/icons/qhimdtransfer_512.png /usr/share/pixmaps
 debian/tmp/usr/bin/qhimdtransfer
 debian/tmp/usr/share/qhimdtransfer/translations/*.qm
+qhimdtransfer/icons/qhimdtransfer_128.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_16.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_24.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_256.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_32.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_48.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_512.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_64.png /usr/share/pixmaps
+qhimdtransfer/icons/qhimdtransfer_96.png /usr/share/pixmaps
