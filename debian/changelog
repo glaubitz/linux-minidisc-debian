@@ -1,3 +1,10 @@
+linux-minidisc (0.9.16-4) unstable; urgency=medium
+
+  * Replace libtag1-dev with libtag-dev in Build-Depends
+    in debian/control (Closes: #1096087)
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 29 Oct 2025 15:18:58 +0100
+
 linux-minidisc (0.9.16-3) unstable; urgency=medium
 
   * Add pkgconf to Build-Depends in debian/control
